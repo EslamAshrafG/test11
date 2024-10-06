@@ -1,0 +1,24 @@
+// Import Global Rules
+@use "./Sass/layout/global-rules";
+
+// Import pages
+@use "./Sass/pages/contact";
+
+// Import colors
+@use "./Sass/variables/colors" as *;
+
+$alt_color: green;
+
+.header {
+  color: $alt_color;
+}
+.footer {
+  $alt_color: black !global;
+  background-color: $alt_color;
+}
+.copyright {
+  background-color: $alt_color;
+}
+.new {
+  background-color: $main;
+}
